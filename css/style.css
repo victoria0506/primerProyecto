@@ -81,8 +81,10 @@ h2{
     display: grid;
     grid-template-columns: repeat(4, 100px);
     background-color: rgb(189, 189, 189);
-    text-align: center;
+    margin-top: 30px;
     padding-left: 15%;
+    padding: 30px;
+    text-align: center;
 
 }
 .img1{
@@ -110,4 +112,28 @@ h2{
     width: 30%;
     margin-top: -8%;
     padding-right: 10%;
+}
+.segundo{
+    text-align: center;
+    margin-top: 2%;
+    border: 3px solid rgb(174, 173, 173);
+    padding: 8px;
+    
+}
+.boton{
+    border-radius: 6px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 4px;
+}
+.boton1{
+    border-radius: 6px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 4px;
+}
+input{
+    padding: 4px;
+    
+
 }
