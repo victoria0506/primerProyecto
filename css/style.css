@@ -1,22 +1,37 @@
 .foto1{
-    width: 30%;
-    border: 45px inset;
+    width: 37%;
+    border: 35px solid;
     border-color: rgb(70, 70, 70);
-    margin-left: 64%;
-    margin-top: -35%;
-    text-align: center;
-}
-
-.inicio{
-    display: grid;
-    font-family: "Segoe UI";
-    text-align: justify;
-    border: 2px solid;
-    border-color: rgba(156, 150, 150, 0.829);
-    overflow: visible;
-    color: rgb(70, 70, 70);
+    margin-left: 50%;
     
 }
+.inicio{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.in2{
+    width: 98%;
+    height: 252px;
+    text-align: end;
+}
+.foto{
+    width: 99%;
+    height: 250px;
+}
+.borde{
+    border: solid 4px gray;
+    margin-top: 0.8%;
+    margin-left: 0.5%;
+    position: absolute;
+    width: 95%;
+    height: 226px;
+}
+
+.tele{
+    width: 2%;
+}
+
 h4{
     letter-spacing: 0.2em;
     font-size: x-large;
@@ -27,10 +42,17 @@ h4{
     grid-template-columns: repeat(2, 1fr);
 }
 
-hr{
+.nor{
     padding: 2px;
     background-color: rgba(156, 150, 150, 0.829);
     border-radius: 2px;
+}
+.vuelta{
+    padding: 6px;
+    border-radius: 3px;
+    border-left: 4px solid rgb(77, 77, 77) ;
+    text-align: left;
+    margin-left: 4%;
 }
 p{
     color: rgb(70, 70, 70);
@@ -43,26 +65,29 @@ h2{
     letter-spacing: 0.3em;
 }
 .edu1{
-    background-color: rgb(164, 164, 164);
-    text-align: left;
+    background-color: rgb(189, 189, 189);
 }
 .edu2{
     display: grid;
     grid-template-columns: repeat(2, 200px);
-    margin-top: 4%;
+    
    
 }
 .expe{
     text-align: left;
-    margin-left: 4%;
+    margin-left: 6%;
 }
 .expe2{
     display: grid;
     grid-template-columns: repeat(4, 100px);
-    background-color: rgb(164, 164, 164);
+    background-color: rgb(189, 189, 189);
     text-align: center;
     padding-left: 15%;
 
+}
+.img1{
+    width: 3%;
+    
 }
 .img3{
     width: 25%;
@@ -83,6 +108,6 @@ h2{
 }
 .cir1{
     width: 30%;
-    margin-top: 8%;
+    margin-top: -8%;
     padding-right: 10%;
 }
