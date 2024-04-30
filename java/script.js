@@ -21,6 +21,24 @@ boton1.addEventListener("click", function () {
 })
 
 
+let cora = document.querySelector("#cora")
+cora.addEventListener("click", function() {
+    let conta = document.querySelector("#con")
+    conta.innerHTML++
+})
+
+let eliminar = document.querySelector("#eli")
+eliminar.addEventListener("click", function() {
+    let eli = document.querySelector("#con")
+    eli.remove()
+    let eli1 = document.querySelector("#uno")
+    eli1.remove()
+    let eli2 = document.querySelector("#dos")
+    eli2.remove()
+})
+
+
+
 
 
 

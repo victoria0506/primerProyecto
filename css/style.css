@@ -3,12 +3,10 @@
     border: 35px solid;
     border-color: rgb(70, 70, 70);
     margin-left: 50%;
-    
 }
 .inicio{
     display: grid;
     grid-template-columns: 50% 50%;
-
 }
 .in2{
     width: 98%;
@@ -66,12 +64,11 @@ h2{
 }
 .edu1{
     background-color: rgb(189, 189, 189);
+   
 }
 .edu2{
     display: grid;
-    grid-template-columns: repeat(2, 200px);
-    
-   
+    grid-template-columns: repeat(2, 200px);  
 }
 .expe{
     text-align: left;
@@ -119,17 +116,46 @@ h2{
     margin-top: 2%;
     border: 3px solid rgb(174, 173, 173);
     padding: 8px;
-    
 }
-button{
+.boton{
     border-radius: 6px;
     background-color: rgb(48, 48, 48);
     color: white;
     padding: 4px;
 }
+.boton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.boton1{
+    border-radius: 6px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 4px;
+}
+.boton1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
 input{
     padding: 4px;
-    
+}
+.cora{
+    background-color: white;
+    border-color: rgb(174, 173, 173);
+    padding: 10px;
+    border-radius: 8px;
 
+}
+.cora:hover{
+    color: rgb(251, 112, 112);
+    border-color: rgb(251, 112, 112);
+}
+.eli{
+    border-radius: 6px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 4px;
+}
+.eli:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
