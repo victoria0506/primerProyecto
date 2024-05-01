@@ -56,34 +56,62 @@ eliminar.addEventListener("click", function() {
     eli2.remove()
 })
 
-
+// este if nos dice que si todo lo que hacemos dentro de el btnModal es verdad
+//empezar a realizar las funcionnes
 if(document.getElementById("btnModal")){
-    let modal = document.getElementById("Modal");
-    let btn = document.getElementById("btnModal");
-    let show = document.querySelector("p");
-    let input = document.querySelector("input");
-    let datos = document.querySelector("#datos");
-    let span = document.getElementsByClassName("cerrar")[0];
-    let body = document.getElementsByTagName("body")[0];
+    //variable del div principal donde va toda la informacion
+    let modal = document.getElementById("Modal")
 
+    //variable del boton que va a realizar la funcion de lanzar la ventana
+    let btn = document.getElementById("btnModal")
+
+    //variable de la x que va a cerrar esta ventana el [0] es para que se tome la primera posicion que es la x
+    let span = document.getElementsByClassName("cerrar")[0]
+
+    //la variable del body es para lograr 
+    let body = document.getElementsByTagName("body")[0]
+
+    //funcion del btn 
     btn.onclick = function() {
-        modal.style.display = "block";
-        body.style.position = "static";
-        body.style.height = "100%";
-        body.style.overflow = "hidden";
+        //el metodo style se va a utilizar para manipular el atributo style de el elemento 
+        //le decimos que la variable modal que es nuestro div, va a ocupar un espacio especifico
+        modal.style.display = "block"
+
+        //le decimos a el body que va a tenes una posicion estatica
+        body.style.position = "static"
+
+        //que va a estar a un 100% del alto del body
+        body.style.height = "100%"
+        
     }
+    //funcion de la etiqueta span donde se encuentra la x que va a cerrar la ventana 
     span.onclick = function() {
-        modal.style.display = "none";
-        body.style.position = "inherit";
-        body.style.height = "auto";
-        body.style.overflow = "visible";
+        
+        //utilizamos para que la informacion dentro de la ventana de se vea si no hasta tocar el boton
+        modal.style.display = "none"
+
+        //
+        body.style.position = "inherit"
+
+        //
+        body.style.height = "auto"
+
+        //
+        body.style.overflow = "visible"
     }
+
+    //window va a representar el documento de la ventana que se va a abrir
     window.onclick = function(event) {
+        //
         if (event.target == modal) {
-            modal.style.display = "none";
-            body.style.position = "inherit";
-            body.style.height = "auto";
-            body.style.overflow = "visible";
+            //
+            modal.style.display = "none"
+            //
+            body.style.position = "inherit"
+            //
+            body.style.height = "auto"
+            //
+            body.style.overflow = "visible"
         }
     }
 }
