@@ -25,13 +25,6 @@ boton.addEventListener("click", function() {
 let btninfo = document.querySelector("#boton1")
 
 //funcion de el btn más información 
-btninfo.addEventListener("click", function () {
-    alert("Gracias por su interes")
-
-    //variable del h4 para la informacion del perfil de Github
-    let mens = document.querySelector("#dos")
-    mens.innerHTML = " Más proyectos : Github Victoria0506 "
-})
 
 //Variable del btn del corazón 
 let btncora = document.querySelector("#cora")
@@ -62,6 +55,38 @@ eliminar.addEventListener("click", function() {
     let eli2 = document.querySelector("#dos")
     eli2.remove()
 })
+
+
+if(document.getElementById("btnModal")){
+    let modal = document.getElementById("Modal");
+    let btn = document.getElementById("btnModal");
+    let show = document.querySelector("p");
+    let input = document.querySelector("input");
+    let datos = document.querySelector("#datos");
+    let span = document.getElementsByClassName("cerrar")[0];
+    let body = document.getElementsByTagName("body")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+        body.style.position = "static";
+        body.style.height = "100%";
+        body.style.overflow = "hidden";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+        body.style.position = "inherit";
+        body.style.height = "auto";
+        body.style.overflow = "visible";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            body.style.position = "inherit";
+            body.style.height = "auto";
+            body.style.overflow = "visible";
+        }
+    }
+}
 
 
 
