@@ -86,31 +86,21 @@ if(document.getElementById("btnModal")){
     }
     //funcion de la etiqueta span donde se encuentra la x que va a cerrar la ventana 
     span.onclick = function() {
-        
-        //utilizamos para que la informacion dentro de la ventana de se vea si no hasta tocar el boton
+        //utilizamos para que la ventana se cierre al tocar la x
         modal.style.display = "none"
-
-        //
         body.style.position = "inherit"
-
-        //
         body.style.height = "auto"
-
-        //
         body.style.overflow = "visible"
     }
 
     //window va a representar el documento de la ventana que se va a abrir
     window.onclick = function(event) {
-        //
+        //event es el parametro de esta funcion, el .target es para que la ventana se pueda abrir == modal es el div 
+        //donde se encuentra toda la info
         if (event.target == modal) {
-            //
             modal.style.display = "none"
-            //
             body.style.position = "inherit"
-            //
             body.style.height = "auto"
-            //
             body.style.overflow = "visible"
         }
     }
